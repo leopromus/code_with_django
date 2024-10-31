@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character List</title>
+</head>
+<body>
+    <h1>Character List</h1>
+    <ul>
+        {% for character in characters %}
+            <li>{{ character.name }}: {{ character.description }} (Age: {{ character.age }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
